@@ -5,113 +5,166 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* General Page Styling */
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
         }
-        header {
+
+        body {
+            background-color: #f0f4f8;
+            color: #2d3748;
+            line-height: 1.6;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Section Headings */
+        .section-heading {
+            color: #2b6cb0;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+        }
+
+        /* SECTION 1: PROFILE - Photo on top, name below */
+        .profile-section {
             text-align: center;
-            background-color: #333;
-            color: white;
-            padding: 20px;
+            margin-bottom: 40px;
         }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 4px;
+            border: 3px solid #2b6cb0;
+            margin-bottom: 15px;
+        }
+
+        .full-name {
+            font-size: 28px;
+            color: #1a202c;
+            margin-bottom: 5px;
+        }
+
+        .job-title {
+            font-size: 18px;
+            color: #4a5568;
+            font-style: italic;
+        }
+
+        /* SECTION 2: ABOUT ME */
+        .about-section {
+            margin-bottom: 35px;
+        }
+
+        .about-section p {
+            text-align: justify;
+            font-size: 16px;
+        }
+
+        /* SECTION 3: PERSONAL DETAILS */
+        .details-section {
+            margin-bottom: 35px;
+        }
+
+        .details-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .details-table td {
+            padding: 8px 12px;
+            font-size: 16px;
+        }
+
+        /* SECTION 4: SKILLS */
+        .skills-section {
+            margin-bottom: 35px;
+        }
+
+        .skills-section p {
+            font-size: 16px;
+        }
+
+        /* SECTION 5: INSPIRATION */
+        .inspiration-section p {
+            text-align: justify;
+            font-size: 16px;
+        }
+
+        /* Section Spacing */
         section {
-            padding: 20px;
-            margin: 10px;
-        }
-        .profile, .about, .details, .skills, .inspiration {
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            color: #333;
-        }
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        li {
-            margin: 5px 0;
-        }
-        /* Profile Photo Styling */
-        .photo-container {
-            text-align: center;
-            margin-top: 15px;
-        }
-        img {
-            width: 250px;
-            height: auto;
-            object-fit: contain;
-            border: 2px solid #333;
-            border-radius: 8px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        /* Responsive Design */
-        @media (max-width: 600px) {
-            img {
-                width: 200px;
-            }
-            section {
-                padding: 15px;
-            }
+            margin-bottom: 40px;
         }
     </style>
 </head>
 <body>
+    <div class="container">
 
-    <header>
-        <h1>Carlos John Mangune</h1>
-        <h3>I WANT TO LEARN</h3>
-    </header>
+        <!-- SECTION 1: PROFILE -->
+        <section class="profile-section">
+            <img src="https://uploads.onecompiler.io/44maahpp7/44maak7p6/PHOTO.jpg" alt="2x2 Profile Picture" class="profile-pic">
+            <h1 class="full-name">Carlos John Mangune</h1>
+            <p class="job-title">I WANT TO LEARN</p>
+        </section>
 
-    <!-- SECTION 1: PROFILE -->
-    <section class="profile">
-        <h2>Profile</h2>
-        <div class="photo-container">
-            <!-- Exact file name match -->
-            <img src="profile-photo.jpg" alt="Carlos John Mangune">
-        </div>
-    </section>
+        <!-- SECTION 2: ABOUT ME -->
+        <section class="about-section">
+            <h2 class="section-heading">About Me</h2>
+            <p>
+                I am Carlos John Mangune, currently studying at OLSCHO. I have a strong interest in technology, particularly in how it shapes the world around us. I am constantly exploring new innovations and enjoy learning about how various tech fields, like programming and system design, work together to create modern solutions.
+            </p>
+        </section>
 
-    <!-- SECTION 2: ABOUT ME -->
-    <section class="about">
-        <h2>About Me</h2>
-        <p>I am Carlos John Mangune, currently studying at OLSCHO. I have a strong interest in technology, particularly in how it shapes the world around us. I am constantly exploring new innovations and enjoy learning about how various tech fields, like programming and system design, work together to create modern solutions.</p>
-    </section>
+        <!-- SECTION 3: PERSONAL DETAILS -->
+        <section class="details-section">
+            <h2 class="section-heading">Personal Details</h2>
+            <table class="details-table">
+                <tr>
+                    <td><strong>Name:</strong></td>
+                    <td>Carlos John Mangune</td>
+                </tr>
+                <tr>
+                    <td><strong>Age:</strong></td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td><strong>Gmail:</strong></td>
+                    <td>mangunec099@gmail.com</td>
+                </tr>
+                <tr>
+                    <td><strong>Address:</strong></td>
+                    <td>Maturanoc purok2, Guimba, Nueva Ecija</td>
+                </tr>
+            </table>
+        </section>
 
-    <!-- SECTION 3: PERSONAL DETAILS -->
-    <section class="details">
-        <h2>Personal Details</h2>
-        <ul>
-            <li><strong>Name:</strong> Carlos John Mangune</li>
-            <li><strong>Age:</strong> 21</li>
-            <li><strong>Email:</strong> <a href="mailto:mangunec099@gmail.com">mangunec099@gmail.com</a></li>
-            <li><strong>Address:</strong> Maturanoc Purok 2, Guimba, Nueva Ecija</li>
-        </ul>
-    </section>
+        <!-- SECTION 4: SKILLS / PROGRAMMING LANGUAGES -->
+        <section class="skills-section">
+            <h2 class="section-heading">Skills & Programming Languages</h2>
+            <p>I know a bit programming about JAVA, PYTHON, & HTML</p>
+        </section>
 
-    <!-- SECTION 4: SKILLS / PROGRAMMING LANGUAGES -->
-    <section class="skills">
-        <h2>Skills / Programming Languages</h2>
-        <p>I know a bit programming about JAVA, PYTHON, & HTML</p>
-        <ul>
-            <li><strong>JAVA</strong> - Beginner</li>
-            <li><strong>PYTHON</strong> - Beginner</li>
-            <li><strong>HTML</strong> - Beginner</li>
-        </ul>
-    </section>
+        <!-- SECTION 5: INSPIRATION AS A PROGRAMMER -->
+        <section class="inspiration-section">
+            <h2 class="section-heading">Inspiration as a Programmer</h2>
+            <p>
+                To be honest, I just really want a lot of money and IT is in demand at this technology era, but now that I'm facing it, it's kinda hard that there are times I think that I can't make it till graduation. Even tho it's like that I'll still try my best to survive this IT and graduate to make my mom proud.
+            </p>
+        </section>
 
-    <!-- SECTION 5: INSPIRATION AS A PROGRAMMER -->
-    <section class="inspiration">
-        <h2>Inspiration as a Programmer</h2>
-        <p>To be honest, I just really want a lot of money and IT is in demand at this technology era. But now that I'm facing it, it's kinda hard, and there are times I think that I can't make it till graduation. Even though it's like that, I'll still try my best to survive this IT and graduate to make my mom proud.</p>
-    </section>
-
+    </div>
 </body>
 </html>
